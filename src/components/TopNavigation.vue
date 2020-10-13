@@ -27,33 +27,171 @@
       </v-toolbar>
     </v-card>
 
-
     <!-- Dialog -->
     <div class="text-center">
       <v-dialog v-model="dialog" width="500">
         <v-card>
           <v-card-title class="headline grey lighten-2">
-            POST YOUR NEW PRODUCT
+            Post New Ads
           </v-card-title>
 
-          <v-card-text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </v-card-text>
+          <!-- Steeper -->
+          <v-stepper v-model="e1">
+            <v-stepper-header>
+              <v-stepper-step :complete="e1 > 1" step="1">
+                Account Configuration
+              </v-stepper-step>
 
-          <v-divider></v-divider>
+              <v-divider></v-divider>
 
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn color="primary" text @click="dialog = false">
-              NEXT
-            </v-btn>
-          </v-card-actions>
+              <v-stepper-step :complete="e1 > 2" step="2">
+                Posting Ads
+              </v-stepper-step>
+            </v-stepper-header>
+
+            <v-stepper-items>
+              <v-stepper-content step="1">
+                <!-- <v-card
+                  class="mb-12"
+                  color="grey lighten-1"
+                  height="200px"
+                ></v-card> -->
+
+                <v-row>
+                  <v-col cols="12" sm="12">
+                    <v-text-field
+                      v-model="message4"
+                      label="User Name"
+                      outlined
+                      prepend-icon="mdi-account"
+                      clearable
+                    ></v-text-field>
+                  </v-col>
+                  <v-col cols="12" sm="12">
+                    <v-text-field
+                      v-model="message4"
+                      label="Phone"
+                      prepend-icon="mdi-phone"
+                      outlined
+                      clearable
+                    ></v-text-field>
+                  </v-col>
+                  <v-col cols="12" sm="12">
+                    <v-text-field
+                      v-model="message4"
+                      label="Email"
+                      prepend-icon="mdi-email"
+                      outlined
+                      clearable
+                    ></v-text-field>
+                  </v-col>
+                  <v-col cols="12" sm="12">
+                    <v-text-field
+                      v-model="message4"
+                      label="Residential Address"
+                      prepend-icon="mdi-map-marker"
+                      outlined
+                      clearable
+                    ></v-text-field>
+                  </v-col>
+                </v-row>
+
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+
+                  <v-btn text>
+                    Cancel
+                  </v-btn>
+
+                  <v-btn color="primary" @click="e1 = 2">
+                    Continue
+                  </v-btn>
+                </v-card-actions>
+              </v-stepper-content>
+
+              <v-stepper-content step="2">
+                <!-- <v-card
+                  class="mb-12"
+                  color="grey lighten-1"
+                  height="200px"
+                ></v-card> -->
+
+                <v-row>
+                  <v-col cols="12" sm="12">
+                    <v-text-field
+                      v-model="message4"
+                      label="Product Name"
+                      prepend-icon="mdi-subtitles-outline"
+                      outlined
+                      clearable
+                    ></v-text-field>
+                  </v-col>
+                  <v-col cols="12" sm="12">
+                    <v-text-field
+                      v-model="message4"
+                      label="Price"
+                      prepend-icon="mdi-cash-check"
+                      outlined
+                      clearable
+                    ></v-text-field>
+                  </v-col>
+                  <v-col cols="12" sm="12">
+                    <v-textarea
+                      clearable
+                      clear-icon="mdi-close-circle"
+                      prepend-icon="mdi-pen"
+                      label="Description"
+                      outlined
+                    ></v-textarea>
+                  </v-col>
+                  <v-col cols="12" sm="12">
+                    <v-file-input
+                      v-model="files"
+                      color="deep-purple accent-4"
+                      counter
+                      label="Pick Your Images"
+                      multiple
+                      placeholder="Upload Images"
+                      prepend-icon="mdi-image"
+                      outlined
+                      :show-size="1000"
+                    >
+                      <template v-slot:selection="{ index, text }">
+                        <v-chip
+                          v-if="index < 2"
+                          color="deep-purple accent-4"
+                          dark
+                          label
+                          small
+                        >
+                          {{ text }}
+                        </v-chip>
+
+                        <span
+                          v-else-if="index === 2"
+                          class="overline grey--text text--darken-3 mx-2"
+                        >
+                          +{{ files.length - 2 }} File(s)
+                        </span>
+                      </template>
+                    </v-file-input>
+                  </v-col>
+                </v-row>
+
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+
+                  <v-btn text>
+                    Cancel
+                  </v-btn>
+
+                  <v-btn color="primary" @click="e1 = 2">
+                    Post
+                  </v-btn>
+                </v-card-actions>
+              </v-stepper-content>
+            </v-stepper-items>
+          </v-stepper>
         </v-card>
       </v-dialog>
     </div>
@@ -64,7 +202,9 @@
 export default {
   data() {
     return {
-      dialog: false,
+      dialog: true,
+      e1: 1,
+      files: [],
     };
   },
 };
