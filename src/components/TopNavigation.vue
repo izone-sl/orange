@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card color="teal darken-4" flat height="10px" tile>
+    <v-card color="teal darken-4" flat height="30px" tile>
       <v-toolbar dense color="teal darken-4" height="60">
         <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
@@ -185,7 +185,7 @@
                     Cancel
                   </v-btn>
 
-                  <v-btn color="primary" @click="e1 = 2">
+                  <v-btn color="primary" @click="dialog = false">
                     Post
                   </v-btn>
                 </v-card-actions>
@@ -202,7 +202,7 @@
 export default {
   data() {
     return {
-      dialog: true,
+      dialog: false,
       e1: 1,
       files: [],
     };
