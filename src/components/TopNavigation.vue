@@ -7,7 +7,7 @@
         <v-toolbar-title class="text-light ">
           <v-avatar>
             <img
-              src="https://lh3.googleusercontent.com/proxy/iK1yZAOD3hCDPkujicI5GFzv-MrpsYtQJbo-CMhkWM8NUeMvbko9_tmSWQPmiG6NfDlm9cnfUgqb8lEfrddm8Ltpiai5jJkaXTjLDAxXAKsn7ZNyBYI"
+              src="https://www.citypng.com/public/uploads/small/11596389842gkrp4qenoyem3yjmcob5umx9pnlqo4nlpbyph6a25i20kqt59srngfb9nctvrx4n9rmaodmsb0dg3d7tnjg9ra0s5gyvi7nqw3ts.png"
               alt="Logo"
             />
           </v-avatar>
@@ -60,7 +60,7 @@
                 <v-row>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      v-model="message4"
+                      
                       label="User Name"
                       outlined
                       prepend-icon="mdi-account"
@@ -69,7 +69,7 @@
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      v-model="message4"
+                      
                       label="Phone"
                       prepend-icon="mdi-phone"
                       outlined
@@ -78,7 +78,7 @@
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      v-model="message4"
+                      
                       label="Email"
                       prepend-icon="mdi-email"
                       outlined
@@ -87,7 +87,7 @@
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      v-model="message4"
+                      
                       label="Residential Address"
                       prepend-icon="mdi-map-marker"
                       outlined
@@ -119,7 +119,7 @@
                 <v-row>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      v-model="message4"
+                      
                       label="Product Name"
                       prepend-icon="mdi-subtitles-outline"
                       outlined
@@ -128,7 +128,7 @@
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      v-model="message4"
+                      
                       label="Price"
                       prepend-icon="mdi-cash-check"
                       outlined

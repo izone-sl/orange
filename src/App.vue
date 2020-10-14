@@ -1,32 +1,27 @@
 <template>
-
   <v-app>
-    
- 
+    <TopNavigation/>
     <v-main>
-      <TopNavigation/>
-      <DefaultView />
+      <Home />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-import DefaultView from "./components/DefaultView";
 import TopNavigation from "./components/TopNavigation";
+import Home from "./views/Home";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
-    DefaultView,
+    Home,
     TopNavigation,
   },
 
   data: () => ({
-     drawer: false,
-      group: null,
+    drawer: false,
+    group: null,
   }),
 };
 </script>
