@@ -58,12 +58,7 @@
             </v-stepper-header>
 
             <v-stepper-items>
-              <v-stepper-content step="1">
-                <!-- <v-card
-                  class="mb-12"
-                  color="grey lighten-1"
-                  height="200px"
-                ></v-card> -->
+              <v-stepper-content step="1"> 
 
                 <v-row>
                   <v-col cols="12" sm="12">
@@ -113,12 +108,7 @@
                 </v-card-actions>
               </v-stepper-content>
 
-              <v-stepper-content step="2">
-                <!-- <v-card
-                  class="mb-12"
-                  color="grey lighten-1"
-                  height="200px"
-                ></v-card> -->
+              <v-stepper-content step="2"> 
 
                 <v-row>
                   <v-col cols="12" sm="12">

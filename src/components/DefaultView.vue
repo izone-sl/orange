@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mt-5">
+  <v-row class="mt-5 m-0">
     <v-col>
       <v-container class="mt-5 pt-5 card indigo lighten-4 p-5">
         <v-row>

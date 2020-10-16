@@ -3,6 +3,7 @@
     <!-- <TopNavigation /> -->
     <HomeWelcome/>
     <ProductSlideGroup/>
+    <CategoryView/>
     <DefaultView />
   </div>
 </template>
@@ -14,6 +15,7 @@ import DefaultView from "../components/DefaultView";
 // import TopNavigation from "../components/TopNavigation";
 import HomeWelcome from "../components/HomeWelcome";
 import ProductSlideGroup from "../components/ProductSlideGroup";
+import CategoryView from "../components/CategoryView";
 
 export default {
   name: "Home",
@@ -23,6 +25,7 @@ export default {
     // TopNavigation,
     HomeWelcome,
     ProductSlideGroup,
+    CategoryView,
   },
 };
 </script>

@@ -1,18 +1,18 @@
 <template>
   <div id="ProductSlideGroup">
-    <v-row>
-      <div class=" card col-xl-12">
+    <v-row class="m-0">
+      <div class=" card teal lighten-4 col-xl-12">
         <v-row>
           <div class="col-xl-1  "></div>
           <div class="col-xl-4  pl-5">
-            <h6>24 Hours Delivery Products</h6>
+            <h6 class="teal--text">24 Hours Delivery Products</h6>
           </div>
           <div class="col-xl-6 "></div>
         </v-row>
       </div>
     </v-row>
 
-    <v-row>
+    <v-row class="m-0">
       <div class="mt-4  col-xl-12">
         <v-sheet class="mx-auto" elevation="14" max-width="1400">
           <v-slide-group center-active v-model="model" class="pa-4"  >
