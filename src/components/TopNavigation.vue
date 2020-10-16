@@ -30,8 +30,7 @@
             class="btn text-light"
             href="https://api.whatsapp.com/send?phone=94767220996&text=Hello%20There,%20i%20need%20a%20product%20can%20you%20help%20me%20to%20purchase?"
           >
-            <v-icon class="pl-3"> mdi-whatsapp</v-icon></a
-          >
+            <v-icon class="pl-3"> mdi-whatsapp</v-icon></a>
         </v-btn>
       </v-toolbar>
     </v-card>

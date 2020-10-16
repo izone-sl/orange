@@ -2,6 +2,7 @@
   <div class="home">
     <!-- <TopNavigation /> -->
     <HomeWelcome/>
+    <ProductSlideGroup/>
     <DefaultView />
   </div>
 </template>
@@ -12,6 +13,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import DefaultView from "../components/DefaultView";
 // import TopNavigation from "../components/TopNavigation";
 import HomeWelcome from "../components/HomeWelcome";
+import ProductSlideGroup from "../components/ProductSlideGroup";
 
 export default {
   name: "Home",
@@ -20,6 +22,7 @@ export default {
     DefaultView,
     // TopNavigation,
     HomeWelcome,
+    ProductSlideGroup,
   },
 };
 </script>
