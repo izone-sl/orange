@@ -14,8 +14,8 @@
 
     <v-row>
       <div class="mt-4  col-xl-12">
-        <v-sheet class="mx-auto" elevation="8" max-width="1300">
-          <v-slide-group v-model="model" class="pa-4" show-arrows>
+        <v-sheet class="mx-auto" elevation="14" max-width="1400">
+          <v-slide-group center-active v-model="model" class="pa-4"  >
             <v-slide-item v-for="item in Products" :key="item">
               <!-- <v-card
                 :color="active ? 'primary' : 'grey lighten-1'"
@@ -36,7 +36,7 @@
                 </v-row>
               </v-card> -->
 
-              <v-card class="mx-auto p-3" width="350">
+              <v-card class="mx-auto p-3 ml-5" width="250">
                 <v-img :src="item.imgUrl" width="100%" height="250"></v-img>
 
                 <v-card-title>
