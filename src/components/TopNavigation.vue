@@ -22,7 +22,16 @@
           class="text-light"
           @click="dialog = true"
         >
-          POST YOUR ADS <v-icon class="pl-3"> mdi-google-ads</v-icon>
+          POST ADS <v-icon class="pl-3"> mdi-google-ads</v-icon>
+        </v-btn>
+
+        <v-btn color="teal darken-4" depressed class="text-light">
+          <a
+            class="btn text-light"
+            href="https://api.whatsapp.com/send?phone=94767220996&text=Hello%20There,%20i%20need%20a%20product%20can%20you%20help%20me%20to%20purchase?"
+          >
+            <v-icon class="pl-3"> mdi-whatsapp</v-icon></a
+          >
         </v-btn>
       </v-toolbar>
     </v-card>
@@ -60,7 +69,6 @@
                 <v-row>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      
                       label="User Name"
                       outlined
                       prepend-icon="mdi-account"
@@ -69,7 +77,6 @@
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      
                       label="Phone"
                       prepend-icon="mdi-phone"
                       outlined
@@ -78,7 +85,6 @@
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      
                       label="Email"
                       prepend-icon="mdi-email"
                       outlined
@@ -87,7 +93,6 @@
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      
                       label="Residential Address"
                       prepend-icon="mdi-map-marker"
                       outlined
@@ -119,7 +124,6 @@
                 <v-row>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      
                       label="Product Name"
                       prepend-icon="mdi-subtitles-outline"
                       outlined
@@ -128,7 +132,6 @@
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-text-field
-                      
                       label="Price"
                       prepend-icon="mdi-cash-check"
                       outlined
