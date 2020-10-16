@@ -15,8 +15,8 @@
     <v-row class="m-0">
       <div class="mt-4  col-xl-12">
         <v-sheet class="mx-auto" elevation="14" max-width="1400">
-          <v-slide-group center-active v-model="model" class="pa-4"  >
-            <v-slide-item v-for="item in Products" :key="item">
+          <v-slide-group center-active v-model="model" class="pa-4">
+            <v-slide-item v-for="item in Products" :key="item.id">
               <!-- <v-card
                 :color="active ? 'primary' : 'grey lighten-1'"
                 class="ma-4"
@@ -110,6 +110,7 @@ export default {
       show: false,
       Products: [
         {
+          id: 1,
           name: "Kottu Mee 80g - Hot & Spicy",
           price: "Rs. 60",
           description:
@@ -122,6 +123,7 @@ export default {
             "https://static-01.daraz.lk/p/b7a1e391cba5f47d4e9cbb97bdcb3227.jpg_340x340q75.jpg_.webp",
         },
         {
+          id: 2,
           name: "Organic Apple Cider Vinegar",
           price: "Rs. 2,500",
           description:
@@ -135,6 +137,7 @@ export default {
             "https://my-live-01.slatic.net/p/7e411b56220eb9fc72ce9c968423b5ea.jpg",
         },
         {
+          id: 3,
           name: "Baby Cheramy Baby Cologne",
           price: "Rs. 410",
           description:
@@ -148,6 +151,7 @@ export default {
             "https://static-01.daraz.lk/p/05ea5fa643def81301aec954a6c85ee7.jpg_340x340q75.jpg_.webp",
         },
         {
+          id: 4,
           name: "Harpic Floral 750ml",
           price: "Rs. 275",
           description:
@@ -161,6 +165,7 @@ export default {
             "https://static-01.daraz.lk/p/c518d56acdd3a7dfbacb40e785a55568.jpg_340x340q75.jpg_.webp",
         },
         {
+          id: 5,
           name: "Nutritional Milk Powder",
           price: "Rs. 1,750",
           description:
@@ -174,6 +179,7 @@ export default {
             "https://static-01.daraz.lk/p/813b5565d4ac04819f5422591fb0fc9a.jpg_340x340q75.jpg_.webp",
         },
         {
+          id: 6,
           name: "Fanta Lemon",
           price: "Rs. 288",
           description: "Bundle of 4 Fanta Lemon 400 ML",
@@ -186,6 +192,7 @@ export default {
             "https://static-01.daraz.lk/p/d0b73d0be3465ae877b5653c71522aa6.jpg_340x340q75.jpg_.webp",
         },
         {
+          id: 7,
           name: "Viva Malted Food Drink",
           price: "Rs. 313",
           description: "Viva Malted Food Drink Original Carton, 400g",
@@ -198,6 +205,7 @@ export default {
             "https://static-01.daraz.lk/p/7f0e73278d8c8e9b4ae563afbebc9a8a.jpg_340x340q75.jpg_.webp",
         },
         {
+          id: 8,
           name: "Organic Banana",
           price: "Rs. 239",
           description: "Organic Banana - Ambul (Baby Lemon)",
