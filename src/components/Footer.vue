@@ -84,13 +84,13 @@
                 style="font-size:15px; color:#546E7A"
                 class="text-dark ml-10 "
               >
-                Copyright © Orange.lk</span
+                Copyright © ExLister.lk</span
               >
               <v-spacer></v-spacer>
 
               <v-avatar class="mr-8">
                 <img
-                  src="https://www.citypng.com/public/uploads/small/11596389842gkrp4qenoyem3yjmcob5umx9pnlqo4nlpbyph6a25i20kqt59srngfb9nctvrx4n9rmaodmsb0dg3d7tnjg9ra0s5gyvi7nqw3ts.png"
+                  src="../assets/exlogo.png"
                   alt="Logo"
                 />
               </v-avatar>

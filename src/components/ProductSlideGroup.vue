@@ -218,6 +218,7 @@ export default {
             "https://static-01.daraz.lk/p/046d746ebec2284a92fca8d37ec13e1c.jpg_340x340q75.jpg_.webp",
         },
       ],
+    
     };
   },
 };

@@ -5,13 +5,19 @@
         <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
         <v-toolbar-title class="text-light ">
-          <v-avatar>
-            <img
-              src="https://www.citypng.com/public/uploads/small/11596389842gkrp4qenoyem3yjmcob5umx9pnlqo4nlpbyph6a25i20kqt59srngfb9nctvrx4n9rmaodmsb0dg3d7tnjg9ra0s5gyvi7nqw3ts.png"
-              alt="Logo"
-            />
-          </v-avatar>
-          <span class="Webtitle"> ORANGE.LK</span>
+          <!-- <v-avatar >
+            <img src="../assets/exlogo.png" alt="Logo" />
+          </v-avatar> -->
+
+          <v-btn icon to="/">
+            <v-avatar>
+              <img src="../assets/exlogo.png" alt="Logo" />
+            </v-avatar>
+          </v-btn>
+
+          <span class="Webtitle btn"
+            ><a href="/" class="nav-link text-light"> ExLister.LK</a></span
+          >
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
@@ -30,7 +36,8 @@
             class="btn text-light"
             href="https://api.whatsapp.com/send?phone=94767220996&text=Hello%20There,%20i%20need%20a%20product%20can%20you%20help%20me%20to%20purchase?"
           >
-            <v-icon class="pl-3"> mdi-whatsapp</v-icon></a>
+            <v-icon class="pl-3"> mdi-whatsapp</v-icon></a
+          >
         </v-btn>
       </v-toolbar>
     </v-card>
@@ -58,8 +65,7 @@
             </v-stepper-header>
 
             <v-stepper-items>
-              <v-stepper-content step="1"> 
-
+              <v-stepper-content step="1">
                 <v-row>
                   <v-col cols="12" sm="12">
                     <v-text-field
@@ -108,8 +114,7 @@
                 </v-card-actions>
               </v-stepper-content>
 
-              <v-stepper-content step="2"> 
-
+              <v-stepper-content step="2">
                 <v-row>
                   <v-col cols="12" sm="12">
                     <v-text-field

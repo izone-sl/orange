@@ -18,7 +18,7 @@
           <div class="col-xl-8 text-center bg-light">
             <v-row class="">
               <div class="col-xl-3  text-center   ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://www.pinclipart.com/picdir/middle/129-1294634_mobile-phone-icon-black-and-white-download-mobile.png"
                     alt="John"
@@ -27,7 +27,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Mobile accessories</a>
+                <a href="/Products" class="btn"> Mobile accessories</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Find great deals for used electronics in Sri Lanka including
@@ -35,26 +35,9 @@
                   more.
                 </p>
               </div>
-              <div class="col-xl-3   text-center  ">
-                <v-btn tile depressed large x-small>
-                  <img
-                    src="https://library.kissclipart.com/20190406/cqe/kissclipart-portal-icon-png-clipart-computer-icons-web-portal-ab1897335d6a8abb.jpg"
-                    alt="John"
-                    width="50"
-                    class="rounded-circle"
-                  />
-                </v-btn>
-                <br />
-                <a href="" class="btn"> Computer accessories</a>
 
-                <p style="font-size:12px; color:#546E7A">
-                  Buy and sell used cars, motorbikes and other vehicles in Sri
-                  Lanka. Choose from top brands including Toyota, Nissan, Honda
-                  and Suzuki.
-                </p>
-              </div>
               <div class="col-xl-3   text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://st2.depositphotos.com/2571355/9783/v/950/depositphotos_97835172-stock-illustration-hand-cream-with-chamomile-flat.jpg"
                     alt="John"
@@ -63,7 +46,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Health and Beauty</a>
+                <a href="/Products" class="btn"> Computer accessories</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   View listings for property in Sri Lanka. Find the cheapest
@@ -72,7 +55,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://cdn4.iconfinder.com/data/icons/fashion-material-3/128/110-512.png"
                     alt="John"
@@ -81,7 +64,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Men's Clothing</a>
+                <a href="/Products" class="btn"> Men's Clothing</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Buy and sell new and used home appliances including furniture,
@@ -90,7 +73,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://cdn0.iconfinder.com/data/icons/fashion-and-clothes-accessories-icons/64/Clothes_dress-512.png"
                     alt="John"
@@ -99,7 +82,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Women's Clothing</a>
+                <a href="/Products" class="btn"> Women's Clothing</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Buy and sell used musical instruments, sports gear and
@@ -107,7 +90,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://us.123rf.com/450wm/dxinerz/dxinerz1803/dxinerz180302722/98106172-glasses-vintage-round-icon-vector-image-can-also-be-used-for-mens-accessories-suitable-for-mobile-ap.jpg?ver=6"
                     alt="John"
@@ -116,7 +99,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Mes's Accessories</a>
+                <a href="/Products" class="btn"> Mes's Accessories</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Search from the widest variety of pets in Sri Lanka. Select
@@ -125,7 +108,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://previews.123rf.com/images/margolana/margolana1512/margolana151200038/49449510-shopping-related-icons-made-in-circle-shape-women-clothing-and-shoes.jpg"
                     alt="John"
@@ -134,7 +117,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Women's Accessories</a>
+                <a href="/Products" class="btn"> Women's Accessories</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Everything you need to look and feel amazing! check out the
@@ -143,7 +126,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://cdn.iconscout.com/icon/premium/png-512-thumb/grocery-shopping-2-1084059.png"
                     alt="John"
@@ -152,7 +135,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> 24 Hours Essentials</a>
+                <a href="/Products" class="btn"> 24 Hours Essentials</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Browse through a range of business services and industrial
@@ -161,7 +144,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://e7.pngegg.com/pngimages/430/445/png-clipart-sport-basketball-olympic-games-icon-sports-equipment-round-icon-sport-orange-thumbnail.png"
                     alt="John"
@@ -170,7 +153,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Sport Equipments</a>
+                <a href="/Products" class="btn"> Sport Equipments</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Find great deals for used electronics in Sri Lanka including
@@ -179,7 +162,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://previews.123rf.com/images/valeriaz/valeriaz1601/valeriaz160100249/67733290-home-electric-kettle-kitchen-equipment-two-pin-plug-round-circle-flat-icon-with-long-shadow-vector.jpg"
                     alt="John"
@@ -188,7 +171,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Kitchen Equipments</a>
+                <a href="/Products" class="btn"> Kitchen Equipments</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Browse through a range of service based companies offering
@@ -196,7 +179,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://icons-for-free.com/iconfiles/png/512/bag+fashion+female+shoe+icon-1320165951135999444.png"
                     alt="John"
@@ -205,7 +188,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Shoes & Bags</a>
+                <a href="/Products" class="btn"> Shoes & Bags</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Find great deals for used electronics in Sri Lanka including
@@ -214,7 +197,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://cdn4.iconfinder.com/data/icons/clocks-isometric/512/g7719-512.png"
                     alt="John"
@@ -223,7 +206,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Wrist watches</a>
+                <a href="/Products" class="btn"> Wrist watches</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Buy and sell books and magazines, find tuition, classes and
@@ -231,7 +214,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://cdn0.iconfinder.com/data/icons/electronic-components/567/Transistor-01-512.png"
                     alt="John"
@@ -240,7 +223,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Electoronics</a>
+                <a href="/Products" class="btn"> Electoronics</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Find great deals for used electronics in Sri Lanka including
@@ -249,7 +232,7 @@
                 </p>
               </div>
               <div class="col-xl-3  text-center  ">
-                <v-btn tile depressed large x-small>
+                <v-btn tile depressed large x-small href="/Products">
                   <img
                     src="https://download.seaicons.com/download/i99179/fps.hu/free-christmas-flat-circle/fps.hu-free-christmas-flat-circle-gift.ico"
                     alt="John"
@@ -258,7 +241,7 @@
                   />
                 </v-btn>
                 <br />
-                <a href="" class="btn"> Gift & Packs</a>
+                <a href="/Products" class="btn"> Gift & Packs</a>
 
                 <p style="font-size:12px; color:#546E7A">
                   Find agricultural products, including fresh crop seeds, plants
@@ -283,7 +266,6 @@
         <h2 class="light-blue--text text-center">
           Do you have something to sell?
         </h2>
-       
       </div>
     </v-row>
     <v-row class="m-0">
@@ -295,13 +277,13 @@
         align-items-center"
       >
         <v-btn class="ma-2" outlined color="teal" @click="dialog = true">
-          POST YOUR ADS NOW FOR FREE ! <v-icon class="pl-3"> mdi-google-ads</v-icon>
+          POST YOUR ADS NOW FOR FREE !
+          <v-icon class="pl-3"> mdi-google-ads</v-icon>
         </v-btn>
-       
       </div>
     </v-row>
 
-       <!-- Dialog -->
+    <!-- Dialog -->
     <div class="text-center">
       <v-dialog v-model="dialog" width="500">
         <v-card>
@@ -324,8 +306,7 @@
             </v-stepper-header>
 
             <v-stepper-items>
-              <v-stepper-content step="1"> 
-
+              <v-stepper-content step="1">
                 <v-row>
                   <v-col cols="12" sm="12">
                     <v-text-field
@@ -374,8 +355,7 @@
                 </v-card-actions>
               </v-stepper-content>
 
-              <v-stepper-content step="2"> 
-
+              <v-stepper-content step="2">
                 <v-row>
                   <v-col cols="12" sm="12">
                     <v-text-field
@@ -451,7 +431,6 @@
             </v-stepper-items>
           </v-stepper>
         </v-card>
-       
       </v-dialog>
     </div>
   </div>
@@ -460,7 +439,7 @@
 <script>
 export default {
   name: "CategoryView",
-   data() {
+  data() {
     return {
       dialog: false,
       e1: 1,

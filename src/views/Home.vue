@@ -1,12 +1,9 @@
 <template>
   <div class="home">
-    <!-- <TopNavigation /> -->
     <HomeWelcome />
     <ProductSlideGroup />
     <CategoryView />
     <Footer />
-
-    <!-- <DefaultView /> -->
   </div>
 </template>
 

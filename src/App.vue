@@ -1,9 +1,11 @@
 <template>
   <v-app>
-    <TopNavigation/>
-    <v-main>
+    <TopNavigation />
+    <!-- <v-main>
       <Home />
-    </v-main>
+    </v-main> -->
+
+    <router-view></router-view>
   </v-app>
 </template>
 
