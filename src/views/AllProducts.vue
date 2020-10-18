@@ -1,42 +1,8 @@
 <template>
   <div id="AllProducts" class="mt-5 teal lighten-5 p-3">
+    asd
+    {{ Dealtest }}
     <v-container class=" bg-light mt-5">
-      <!-- <v-row class="m-0">
-        <v-col cols="6" md="2" class="p-0 d-flex justify-center align-center">
-          <v-toolbar-title>
-            <v-icon class="teal--text">mdi-map-marker</v-icon>
-            Location</v-toolbar-title
-          >
-        </v-col>
-
-        <v-spacer></v-spacer>
-        <v-col cols="6" md="2" class="p-0 d-flex justify-center align-center">
-          <v-toolbar-title
-            ><v-icon class="teal--text">mdi-label</v-icon>
-            Category</v-toolbar-title
-          >
-        </v-col>
-
-        <v-spacer></v-spacer>
-        <v-col cols="12" md="6" class="p-0 mt-5  ">
-          <v-text-field
-            v-model="message"
-            :append-outer-icon="message ? 'mdi-shopping-search' : ''"
-            outlined
-            placeholder="Search..."
-            clear-icon="mdi-close-circle"
-            clearable
-            dense
-            @click:append="toggleMarker"
-            @click:append-outer="sendMessage"
-            @click:prepend="changeIcon"
-            @click:clear="clearMessage"
-          ></v-text-field>
-        </v-col>
-      </v-row>
-
-      <hr /> -->
-
       <v-row class="m-0 mt-1">
         <!-- First Section -->
         <div class="col-xl-4    ">
@@ -290,7 +256,7 @@
             class="mx-auto ma-2"
             outlined
             max-width="600"
-            v-for="(item, index) in Products"
+            v-for="(item, index) in Dealtest[0]"
             :key="index"
             @click="viewsingle(item)"
           >
@@ -353,9 +319,9 @@
             <v-toolbar-title>{{ viewProduct.name }}</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items>
-              <v-btn dark text @click="dialog = false">
+              <!-- <v-btn dark text @click="dialog = false">
               Save
-            </v-btn>
+            </v-btn> -->
             </v-toolbar-items>
           </v-toolbar>
           <v-list three-line subheader>
@@ -534,11 +500,15 @@
 
 <script>
 import Footer from "../components/Footer";
+
+const ExternalProducts = require("../router/Products");
+
 export default {
   components: {
     Footer,
   },
   data: () => ({
+    Dealtest: [],
     dialog: false,
     tab: 0,
     quantity: 1,
@@ -757,7 +727,9 @@ export default {
       return this.icons[this.iconIndex];
     },
   },
-
+  mounted() {
+    this.Dealtest.push(ExternalProducts["Products"]);
+  },
   methods: {
     viewsingle(item) {
       this.dialog = true;
@@ -776,10 +748,10 @@ export default {
         imgUrl: item.imgUrl,
         subImg: [
           item.imgUrl,
-          "https://www.hi2world.com/pub/media/catalog/product/3/1/3170.jpg",
-          "https://sc02.alicdn.com/kf/HTB1j7fhKVXXXXaoXVXXq6xXFXXX0.jpg",
-          "https://cdn.shopify.com/s/files/1/2671/1426/products/Kottu-Mee-Cup-Noodles---Tom-Yum-Instruction_1200x1200.jpg?v=1587293470",
-          "https://i.ytimg.com/vi/cA-pEOV9BQg/hqdefault.jpg",
+          item.subImg[0],
+          item.subImg[1],
+          item.subImg[2],
+          item.subImg[3],
         ],
       };
       // alert("Product " + item.name + "has been selected");
