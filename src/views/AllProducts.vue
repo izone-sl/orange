@@ -1,7 +1,5 @@
 <template>
   <div id="AllProducts" class="mt-5 teal lighten-5 p-3">
-    asd
-    {{ Dealtest }}
     <v-container class=" bg-light mt-5">
       <v-row class="m-0 mt-1">
         <!-- First Section -->
@@ -10,7 +8,7 @@
             <v-col cols="12" md="12" class="   ">
               <v-text-field
                 v-model="message"
-                :append-outer-icon="message ? 'mdi-shopping-search' : ''"
+                :append-outer-icon="message ? 'mdi-search-web' : ''"
                 outlined
                 placeholder="What are you looking for ?"
                 clear-icon="mdi-close-circle"
@@ -256,7 +254,7 @@
             class="mx-auto ma-2"
             outlined
             max-width="600"
-            v-for="(item, index) in Dealtest[0]"
+            v-for="(item, index) in E_Product[0]"
             :key="index"
             @click="viewsingle(item)"
           >
@@ -312,7 +310,12 @@
         transition="dialog-bottom-transition"
       >
         <v-card class="border-none">
-          <v-toolbar dark color="teal darken-4">
+          <v-toolbar
+            dark
+            color="teal darken-4"
+            style="position:fixed; z-index:100;"
+            class="w-100"
+          >
             <v-btn icon dark @click="dialog = false">
               <v-icon>mdi-keyboard-backspace</v-icon>
             </v-btn>
@@ -324,7 +327,8 @@
             </v-btn> -->
             </v-toolbar-items>
           </v-toolbar>
-          <v-list three-line subheader>
+
+          <v-list three-line subheader class="pt-11">
             <v-list-item>
               <v-list-item-content>
                 <v-row class="m-0">
@@ -430,9 +434,17 @@
                             </v-btn>
                           </v-col>
 
-                          <v-col md="6" cols="6" class=" ">
+                          <v-col md="8" cols="6" class=" ">
                             <h6 class="teal--text">Contact Information</h6>
                             <br />
+
+                            <v-btn
+                              depressed
+                              class="btn"
+                              style="font-size:12px; color:#546E7A; text-decoration:none;"
+                              ><v-icon>mdi-account</v-icon>
+                              {{ viewProduct.postedBy }}</v-btn
+                            >
 
                             <a
                               :href="wa_url + viewProduct.contact"
@@ -450,10 +462,9 @@
                               ><v-icon>mdi-email</v-icon>
                               {{ viewProduct.contactMail }}</a
                             >
+                          </v-col>
 
-                            <!-- <p style="font-size:12px; color:#546E7A" class="btn">
-                              <v-icon>mdi-email</v-icon> raza@gmail.com
-                            </p> -->
+                         
                           </v-col>
 
                           <v-dialog v-model="quantityAlert" max-width="330">
@@ -508,7 +519,8 @@ export default {
     Footer,
   },
   data: () => ({
-    Dealtest: [],
+      
+    E_Product: [],
     dialog: false,
     tab: 0,
     quantity: 1,
@@ -575,132 +587,7 @@ export default {
       "Electoronics",
       "Gift & Packs",
     ],
-    Products: [
-      {
-        id: 1,
-        name: "Kottu Mee 80g - Hot & Spicy",
-        price: "Rs. 60",
-        description:
-          "Prima is proud to announce that Prima Noodles is the preferred brand in the Instant Noodle Category in Sri Lanka (Source: LMRB Household Panel Data), for its superior quality and nutritional value.",
-        category: "DeliveryService",
-        postedBy: "Admin",
-        contact: "94767220996",
-        contactMail: "raza@gmail.com",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-        imgUrl:
-          "https://cdn.shopify.com/s/files/1/2671/1426/products/Prima-Kottu-Mee-Hot-and-Spicy-Flavour-80g_1200x1200.jpg?v=1550924061",
-      },
-      {
-        id: 2,
-        name: "Organic Apple Cider Vinegar",
-        price: "Rs. 2,500",
-        description:
-          "Not all vinegars are created equal. This organic Bragg apple cider vinegar with the ‘Mother’ is a high-quality, unfiltered vinegar made from organically grown apples, which still contains the ‘Mother’.",
-        category: "DeliveryService",
-        postedBy: "Admin",
-        contact: "94767220996",
-        contactMail: "raza@gmail.com",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
-        imgUrl:
-          "https://www.costco.co.uk/medias/sys_master/images/h20/h52/29948251078686.jpg",
-      },
-      {
-        id: 3,
-        name: "Baby Cheramy Baby Cologne",
-        price: "Rs. 410",
-        description:
-          "Baby Cheramy with a rich heritage of over 50 years in serving the nation has been able to build trust & confidence by enriching the lives of mothers and babies.The brand’s main equity is in the trust mothers have as a true baby care brand in the country.",
-        category: "DeliveryService",
-        postedBy: "Admin",
-        contact: "94767220996",
-        contactMail: "raza@gmail.com",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-
-        imgUrl:
-          "https://www.babycare.lk/image/cache/catalog/demo/product/Baby%20Cheramy/Baby%20Cheramy%20Nappy%20Wash%20Powder-1000x1000.png",
-      },
-      {
-        id: 4,
-        name: "Harpic Floral 750ml",
-        price: "Rs. 275",
-        description:
-          "Kills 99.9% of germs. Removes tough stains. Helps fight odour and any unpleasant smell. Better than the ordinary bleach, acid and phenyl",
-        category: "DeliveryService",
-        postedBy: "Admin",
-        contact: "94767220996",
-        contactMail: "raza@gmail.com",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-
-        imgUrl:
-          "https://www.kapruka.com/shops/specialGifts/productImages/1266719150015_Harpic(Blue).jpg",
-      },
-      {
-        id: 5,
-        name: "Nutritional Milk Powder",
-        price: "Rs. 1,750",
-        description:
-          "Sustagen replenishes that body and helps maintain energy for longer. Sustagen may also provide the nutrients that may be lacking due to an insufficient diet.",
-        category: "DeliveryService",
-        postedBy: "Admin",
-        contact: "94767220996",
-        contactMail: "raza@gmail.com",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-
-        imgUrl:
-          "https://www.freshbox.lk/media/catalog/product/cache/611c351882d010fc6b634c549598d3eb/m/l/mlk_pwder.jpeg",
-      },
-      {
-        id: 6,
-        name: "Fanta Lemon",
-        price: "Rs. 288",
-        description: "Bundle of 4 Fanta Lemon 400 ML",
-        category: "DeliveryService",
-        postedBy: "Admin",
-        contact: "94767220996",
-        contactMail: "raza@gmail.com",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-
-        imgUrl:
-          "https://images-na.ssl-images-amazon.com/images/I/71Cd1SW1pVL._SX425_.jpg",
-      },
-      {
-        id: 7,
-        name: "Viva Malted Food Drink",
-        price: "Rs. 313",
-        description: "Viva Malted Food Drink Original Carton, 400g",
-        category: "DeliveryService",
-        postedBy: "Admin",
-        contact: "94767220996",
-        contactMail: "raza@gmail.com",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-
-        imgUrl:
-          "https://athalangata.lk/assets/uploads/7cd083f5264dc8591f6175415c3bd09d.png",
-      },
-      {
-        id: 8,
-        name: "Organic Banana",
-        price: "Rs. 239",
-        description: "Organic Banana - Ambul (Baby Lemon)",
-        category: "DeliveryService",
-        postedBy: "Admin",
-        contact: "94767220996",
-        contactMail: "raza@gmail.com",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-
-        imgUrl:
-          "https://www.meijer.com/content/dam/meijer/product/0000/00/0940/11/0000000940115_a1c1_1200.png",
-      },
-    ],
     viewProduct: {
       id: null,
       name: "null",
@@ -712,13 +599,7 @@ export default {
       contactMail: null,
       waLink: null,
       imgUrl: null,
-      subImg: [
-        "https://i.ytimg.com/vi/iuon7lanIUI/maxresdefault.jpg",
-        "https://www.hi2world.com/pub/media/catalog/product/3/1/3170.jpg",
-        "https://sc02.alicdn.com/kf/HTB1j7fhKVXXXXaoXVXXq6xXFXXX0.jpg",
-        "https://cdn.shopify.com/s/files/1/2671/1426/products/Kottu-Mee-Cup-Noodles---Tom-Yum-Instruction_1200x1200.jpg?v=1587293470",
-        "https://i.ytimg.com/vi/cA-pEOV9BQg/hqdefault.jpg",
-      ],
+      subImg: ["", "", "", "", ""],
     },
   }),
 
@@ -728,7 +609,7 @@ export default {
     },
   },
   mounted() {
-    this.Dealtest.push(ExternalProducts["Products"]);
+    this.E_Product.push(ExternalProducts["Products"]);
   },
   methods: {
     viewsingle(item) {
