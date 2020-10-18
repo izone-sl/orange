@@ -464,9 +464,6 @@
                             >
                           </v-col>
 
-                         
-                          </v-col>
-
                           <v-dialog v-model="quantityAlert" max-width="330">
                             <v-card>
                               <v-card-title class="headline">
@@ -519,7 +516,6 @@ export default {
     Footer,
   },
   data: () => ({
-      
     E_Product: [],
     dialog: false,
     tab: 0,
