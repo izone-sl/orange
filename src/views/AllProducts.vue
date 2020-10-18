@@ -410,114 +410,114 @@ export default {
       "Gift & Packs",
     ],
     Products: [
-      {
-        id: 1,
-        name: "Kottu Mee 80g - Hot & Spicy",
-        price: "Rs. 60",
-        description:
-          "Prima is proud to announce that Prima Noodles is the preferred brand in the Instant Noodle Category in Sri Lanka (Source: LMRB Household Panel Data), for its superior quality and nutritional value.",
-        category: "Delivery Service",
-        postedBy: "Admin",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-        imgUrl:
-          "https://static-01.daraz.lk/p/b7a1e391cba5f47d4e9cbb97bdcb3227.jpg_340x340q75.jpg_.webp",
-      },
-      {
-        id: 2,
-        name: "Organic Apple Cider Vinegar",
-        price: "Rs. 2,500",
-        description:
-          "Not all vinegars are created equal. This organic Bragg apple cider vinegar with the ‘Mother’ is a high-quality, unfiltered vinegar made from organically grown apples, which still contains the ‘Mother’.",
-        category: "Delivery Service",
-        postedBy: "Admin",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
+       {
+          id: 1,
+          name: "Kottu Mee 80g - Hot & Spicy",
+          price: "Rs. 60",
+          description:
+            "Prima is proud to announce that Prima Noodles is the preferred brand in the Instant Noodle Category in Sri Lanka (Source: LMRB Household Panel Data), for its superior quality and nutritional value.",
+          category: "DeliveryService",
+          postedBy: "Admin",
+          waLink:
+            "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
+          imgUrl:
+            "https://cdn.shopify.com/s/files/1/2671/1426/products/Prima-Kottu-Mee-Hot-and-Spicy-Flavour-80g_1200x1200.jpg?v=1550924061",
+        },
+        {
+          id: 2,
+          name: "Organic Apple Cider Vinegar",
+          price: "Rs. 2,500",
+          description:
+            "Not all vinegars are created equal. This organic Bragg apple cider vinegar with the ‘Mother’ is a high-quality, unfiltered vinegar made from organically grown apples, which still contains the ‘Mother’.",
+          category: "DeliveryService",
+          postedBy: "Admin",
+          waLink:
+            "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
-        imgUrl:
-          "https://my-live-01.slatic.net/p/7e411b56220eb9fc72ce9c968423b5ea.jpg",
-      },
-      {
-        id: 3,
-        name: "Baby Cheramy Baby Cologne",
-        price: "Rs. 410",
-        description:
-          "Baby Cheramy with a rich heritage of over 50 years in serving the nation has been able to build trust & confidence by enriching the lives of mothers and babies.The brand’s main equity is in the trust mothers have as a true baby care brand in the country.",
-        category: "Delivery Service",
-        postedBy: "Admin",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
+          imgUrl:
+            "https://www.costco.co.uk/medias/sys_master/images/h20/h52/29948251078686.jpg",
+        },
+        {
+          id: 3,
+          name: "Baby Cheramy Baby Cologne",
+          price: "Rs. 410",
+          description:
+            "Baby Cheramy with a rich heritage of over 50 years in serving the nation has been able to build trust & confidence by enriching the lives of mothers and babies.The brand’s main equity is in the trust mothers have as a true baby care brand in the country.",
+          category: "DeliveryService",
+          postedBy: "Admin",
+          waLink:
+            "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
-        imgUrl:
-          "https://static-01.daraz.lk/p/05ea5fa643def81301aec954a6c85ee7.jpg_340x340q75.jpg_.webp",
-      },
-      {
-        id: 4,
-        name: "Harpic Floral 750ml",
-        price: "Rs. 275",
-        description:
-          "Kills 99.9% of germs. Removes tough stains. Helps fight odour and any unpleasant smell. Better than the ordinary bleach, acid and phenyl",
-        category: "Delivery Service",
-        postedBy: "Admin",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
+          imgUrl:
+            "https://www.babycare.lk/image/cache/catalog/demo/product/Baby%20Cheramy/Baby%20Cheramy%20Nappy%20Wash%20Powder-1000x1000.png",
+        },
+        {
+          id: 4,
+          name: "Harpic Floral 750ml",
+          price: "Rs. 275",
+          description:
+            "Kills 99.9% of germs. Removes tough stains. Helps fight odour and any unpleasant smell. Better than the ordinary bleach, acid and phenyl",
+          category: "DeliveryService",
+          postedBy: "Admin",
+          waLink:
+            "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
-        imgUrl:
-          "https://static-01.daraz.lk/p/c518d56acdd3a7dfbacb40e785a55568.jpg_340x340q75.jpg_.webp",
-      },
-      {
-        id: 5,
-        name: "Nutritional Milk Powder",
-        price: "Rs. 1,750",
-        description:
-          "Sustagen replenishes that body and helps maintain energy for longer. Sustagen may also provide the nutrients that may be lacking due to an insufficient diet.",
-        category: "Delivery Service",
-        postedBy: "Admin",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
+          imgUrl:
+            "https://www.kapruka.com/shops/specialGifts/productImages/1266719150015_Harpic(Blue).jpg",
+        },
+        {
+          id: 5,
+          name: "Nutritional Milk Powder",
+          price: "Rs. 1,750",
+          description:
+            "Sustagen replenishes that body and helps maintain energy for longer. Sustagen may also provide the nutrients that may be lacking due to an insufficient diet.",
+          category: "DeliveryService",
+          postedBy: "Admin",
+          waLink:
+            "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
-        imgUrl:
-          "https://static-01.daraz.lk/p/813b5565d4ac04819f5422591fb0fc9a.jpg_340x340q75.jpg_.webp",
-      },
-      {
-        id: 6,
-        name: "Fanta Lemon",
-        price: "Rs. 288",
-        description: "Bundle of 4 Fanta Lemon 400 ML",
-        category: "Delivery Service",
-        postedBy: "Admin",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
+          imgUrl:
+            "https://www.freshbox.lk/media/catalog/product/cache/611c351882d010fc6b634c549598d3eb/m/l/mlk_pwder.jpeg",
+        },
+        {
+          id: 6,
+          name: "Fanta Lemon",
+          price: "Rs. 288",
+          description: "Bundle of 4 Fanta Lemon 400 ML",
+          category: "DeliveryService",
+          postedBy: "Admin",
+          waLink:
+            "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
-        imgUrl:
-          "https://static-01.daraz.lk/p/d0b73d0be3465ae877b5653c71522aa6.jpg_340x340q75.jpg_.webp",
-      },
-      {
-        id: 7,
-        name: "Viva Malted Food Drink",
-        price: "Rs. 313",
-        description: "Viva Malted Food Drink Original Carton, 400g",
-        category: "Delivery Service",
-        postedBy: "Admin",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
+          imgUrl:
+            "https://www.grocereezy.com/wp-content/uploads/2017/02/1247-1.jpg",
+        },
+        {
+          id: 7,
+          name: "Viva Malted Food Drink",
+          price: "Rs. 313",
+          description: "Viva Malted Food Drink Original Carton, 400g",
+          category: "DeliveryService",
+          postedBy: "Admin",
+          waLink:
+            "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
-        imgUrl:
-          "https://static-01.daraz.lk/p/7f0e73278d8c8e9b4ae563afbebc9a8a.jpg_340x340q75.jpg_.webp",
-      },
-      {
-        id: 8,
-        name: "Organic Banana",
-        price: "Rs. 239",
-        description: "Organic Banana - Ambul (Baby Lemon)",
-        category: "Delivery Service",
-        postedBy: "Admin",
-        waLink:
-          "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
+          imgUrl:
+            "https://athalangata.lk/assets/uploads/7cd083f5264dc8591f6175415c3bd09d.png",
+        },
+        {
+          id: 8,
+          name: "Organic Banana",
+          price: "Rs. 239",
+          description: "Organic Banana - Ambul (Baby Lemon)",
+          category: "DeliveryService",
+          postedBy: "Admin",
+          waLink:
+            "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
-        imgUrl:
-          "https://static-01.daraz.lk/p/046d746ebec2284a92fca8d37ec13e1c.jpg_340x340q75.jpg_.webp",
-      },
+          imgUrl:
+            "https://www.meijer.com/content/dam/meijer/product/0000/00/0940/11/0000000940115_a1c1_1200.png",
+        },
     ],
   }),
 
