@@ -81,8 +81,8 @@
             </div>
             <div class=" col-xl-5 mt-5">
               <v-img
-                src="https://lh3.googleusercontent.com/GGCALD1wh7KLh9_veAo3cEKM0rDWE5dOYUn4pNI0eFLcWIqyiWwKqvEkxEq6RqA8D2I=w412-h220-rw"
-                class="card "
+                src="https://images.freeclues.com/assets/images/coupons/coupon_46f177b23c602de5cdee649d5c4686a2.jpg"
+                class=" "
                 aspect-ratio="1.7"
               ></v-img>
             </div>

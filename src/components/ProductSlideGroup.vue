@@ -189,7 +189,7 @@ export default {
             "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
 
           imgUrl:
-            "https://www.grocereezy.com/wp-content/uploads/2017/02/1247-1.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/71Cd1SW1pVL._SX425_.jpg",
         },
         {
           id: 7,
