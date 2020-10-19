@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <TopNavigation style="position:fixed; z-index:100" class="w-100"/>
-    <HomeWelcome />
+    <HomeWelcome class="mt-13"/>
     <ProductSlideGroup />
     <CategoryView />
     <Footer />

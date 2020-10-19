@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card color="teal darken-4" flat height="30px" tile>
+    <v-card color="teal darken-4" flat height="130px" tile>
       <v-toolbar dense color="teal darken-4" height="60">
         <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
@@ -28,7 +28,7 @@
           class="text-light"
           @click="dialog = true"
         >
-          POST ADS <v-icon class="pl-3"> mdi-google-ads</v-icon>
+          POST ADS <v-icon class="pl-3"> mdi-plus-circle</v-icon>
         </v-btn>
 
         <v-btn color="teal darken-4" depressed class="text-light">
@@ -40,9 +40,27 @@
           >
         </v-btn>
       </v-toolbar>
+
+      <v-row class="m-0  bg-light d-flex justify-center">
+        <v-col cols="12" md="4" class=" pl-5 pr-5 ">
+          <v-text-field
+            v-model="message"
+            :append-outer-icon="message ? 'mdi-magnify' : ''"
+            outlined
+            placeholder="What are you looking for ?"
+            clear-icon="mdi-close-circle"
+            clearable
+            dense
+            @click:append="toggleMarker"
+            @click:append-outer="sendMessage"
+            @click:prepend="changeIcon"
+            @click:clear="clearMessage"
+          ></v-text-field>
+        </v-col>
+      </v-row>
     </v-card>
 
-    <!-- Dialog -->
+    <!-- ADD Product Dialog -->
     <div class="text-center">
       <v-dialog v-model="dialog" width="500">
         <v-card>
@@ -202,7 +220,46 @@ export default {
       dialog: false,
       e1: 1,
       files: [],
+      show: false,
+      message: "",
+      marker: true,
+      iconIndex: 0,
+      icons: [
+        "mdi-emoticon",
+        "mdi-emoticon-search",
+        "mdi-emoticon-dead",
+        "mdi-emoticon-excited",
+        "mdi-emoticon-happy",
+        "mdi-emoticon-neutral",
+        "mdi-emoticon-sad",
+        "mdi-emoticon-tongue",
+      ],
     };
+  },
+  computed: {
+    icon() {
+      return this.icons[this.iconIndex];
+    },
+  },
+  methods: {
+    toggleMarker() {
+      this.marker = !this.marker;
+    },
+    sendMessage() {
+      this.resetIcon();
+      this.clearMessage();
+    },
+    clearMessage() {
+      this.message = "";
+    },
+    resetIcon() {
+      this.iconIndex = 0;
+    },
+    changeIcon() {
+      this.iconIndex === this.icons.length - 1
+        ? (this.iconIndex = 0)
+        : this.iconIndex++;
+    },
   },
 };
 </script>

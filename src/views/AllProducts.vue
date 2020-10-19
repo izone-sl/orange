@@ -1,13 +1,12 @@
 <template>
-
-  <div id="AllProducts" class="  teal lighten-5 ">
-    <TopNavigation style="position:fixed; z-index:100" class="w-100"/>
-    <v-container class=" bg-light mt-8">
-      <v-row class="m-0 mt-1">
+  <div id="AllProducts" class="teal lighten-5 ">
+    <TopNavigation style="position:fixed; z-index:100" class="w-100" />
+    <v-container class=" bg-light mt-15 pt-15">
+      <v-row class="m-0 mt-10">
         <!-- First Section -->
-        <div class="col-xl-4    " >
+        <div class="col-xl-4    ">
           <v-row>
-            <v-col cols="12" md="12" class="   ">
+            <!-- <v-col cols="12" md="12" class="   ">
               <v-text-field
               
                 v-model="message"
@@ -22,7 +21,7 @@
                 @click:prepend="changeIcon"
                 @click:clear="clearMessage"
               ></v-text-field>
-            </v-col>
+            </v-col> -->
             <v-col cols="12" md="12">
               <v-expansion-panels>
                 <v-expansion-panel>
@@ -268,7 +267,7 @@
                   md="3"
                   class=" d-flex justify-center align-center"
                 >
-                  <v-img :src="item.imgUrl" width="150" height="150"></v-img>
+                  <v-img :src="item.subImg[0]" width="150" height="150"></v-img>
                 </v-col>
 
                 <v-col cols="12" md="6">
@@ -533,7 +532,7 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
-          <ProductSlideGroup/>
+          <ProductSlideGroup />
         </v-card>
       </v-dialog>
     </v-row>
@@ -634,7 +633,7 @@ export default {
       contact: null,
       contactMail: null,
       waLink: null,
-      imgUrl: null,
+
       subImg: ["", "", "", "", ""],
     },
   }),
@@ -662,9 +661,8 @@ export default {
         contact: item.contact,
         contactMail: item.contactMail,
         waLink: item.waLink,
-        imgUrl: item.imgUrl,
+
         subImg: [
-          item.imgUrl,
           item.subImg[0],
           item.subImg[1],
           item.subImg[2],

@@ -14,12 +14,13 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product, ",
-    imgUrl:
-      "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Camera-Tripod-3110-3.jpg?resize=555%2C555&ssl=1",
+
     subImg: [
+      "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Camera-Tripod-3110-3.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Camera-Tripod-3110-2.jpg?resize=555%2C555&ssl=1",
       "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Camera-Tripod-3110-1.jpg?resize=555%2C555&ssl=1",
     ],
+    date: "10-10-2020",
   },
   {
     id: 2,
@@ -33,14 +34,15 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product,",
-    imgUrl:
-      "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Wireless-Koniycoi-Magnetic-Headphone-3.jpg?resize=555%2C555&ssl=1",
+
     subImg: [
+      "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Wireless-Koniycoi-Magnetic-Headphone-3.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Wireless-Koniycoi-Magnetic-Headphone-7.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Wireless-Koniycoi-Magnetic-Headphone-5.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Wireless-Koniycoi-Magnetic-Headphone-2.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Wireless-Koniycoi-Magnetic-Headphone-1.jpg?resize=555%2C555&ssl=1",
     ],
+    date: "10-10-2020",
   },
   {
     id: 3,
@@ -54,13 +56,14 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product,",
-    imgUrl:
-      "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/09/3.5-AUX-Lavalier-Microphone-5.jpg?resize=555%2C555&ssl=1",
+
     subImg: [
+      "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/09/3.5-AUX-Lavalier-Microphone-5.jpg?resize=555%2C555&ssl=1",
       "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/09/3.5-AUX-Lavalier-Microphone-6.jpg?resize=555%2C555&ssl=1",
       "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/09/3.5-AUX-Lavalier-Microphone-3.jpg?resize=555%2C555&ssl=1",
       "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Camera-Tripod-3110-3.jpg?resize=555%2C555&ssl=1",
     ],
+    date: "10-10-2020",
   },
   {
     id: 4,
@@ -74,11 +77,12 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product,",
-    imgUrl:
-      "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/08/Table-Mate-2-3.png?w=800&ssl=1",
+
     subImg: [
+      "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/08/Table-Mate-2-3.png?w=800&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/08/Table-Mate-2-4.jpg?w=800&ssl=1",
     ],
+    date: "10-10-2020",
   },
   {
     id: 5,
@@ -92,12 +96,13 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product,",
-    imgUrl:
-      "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/05/E-Table-01.jpg?resize=555%2C555&ssl=1",
+
     subImg: [
+      "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/05/E-Table-01.jpg?resize=555%2C555&ssl=1",
       "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/05/E-Table-03.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/05/E-Table-08.jpg?resize=555%2C555&ssl=1",
     ],
+    date: "10-10-2020",
   },
   {
     id: 6,
@@ -111,12 +116,13 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product,",
-    imgUrl:
-      "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/05/gemei-1709-01.jpg?resize=555%2C555&ssl=1",
+
     subImg: [
+      "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/05/gemei-1709-01.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/05/002-22.jpg?w=500&ssl=1",
       "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/05/004-19.jpg?resize=555%2C369&ssl=1",
     ],
+    date: "10-10-2020",
   },
   {
     id: 7,
@@ -130,11 +136,12 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product,",
-    imgUrl:
-      "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2019/08/GM-2961-A.jpg?resize=555%2C555&ssl=1",
+
     subImg: [
+      "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2019/08/GM-2961-A.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2019/08/GM-2961.jpg?w=1080&ssl=1",
     ],
+    date: "10-10-2020",
   },
   {
     id: 8,
@@ -148,12 +155,13 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product,",
-    imgUrl:
-      "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/10/SHX1264-Ozone-National-Electric-Oven-with-Rotisserie-2kg-30L-001-1.jpg?resize=555%2C555&ssl=1",
+
     subImg: [
+      "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/10/SHX1264-Ozone-National-Electric-Oven-with-Rotisserie-2kg-30L-001-1.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/10/Ozone-1kg-Oven-4.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/10/Ozone-1kg-Oven-1.jpg?resize=555%2C555&ssl=1",
     ],
+    date: "10-10-2020",
   },
   {
     id: 9,
@@ -167,11 +175,12 @@ export const Products = [
     contactMail: "raza@gmail.com",
     waLink:
       "https://api.whatsapp.com/send?phone=94767220996&text=Hi, I am looking to buy this Product,",
-    imgUrl:
-      "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/10/SHX-1290-Sunglow-4-Burner-001.jpg?resize=555%2C555&ssl=1",
+
     subImg: [
+      "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/10/SHX-1290-Sunglow-4-Burner-001.jpg?resize=555%2C555&ssl=1",
       "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/10/SHX-1290-Sunglow-4-Burner-004.jpg?resize=555%2C555&ssl=1",
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/10/SHX-1290-Sunglow-4-Burner-003.jpg?resize=555%2C555&ssl=1",
     ],
+    date: "10-10-2020",
   },
 ];

@@ -42,8 +42,8 @@
                 </v-row>
               </v-card> -->
 
-              <v-card class="mx-auto p-3 ml-5" width="250">
-                <v-img :src="item.imgUrl" width="100%" height="250"></v-img>
+              <v-card class="mx-auto p-3 ml-5" width="250" height="410">
+                <v-img :src="item.subImg[0]" width="100%" height="250"></v-img>
 
                 <v-card-title v-if="item.name < 16">
                   {{ item.name }}
@@ -72,11 +72,11 @@
 
                   <v-spacer></v-spacer>
 
-                  <v-btn icon @click="show = !show">
+                  <!-- <v-btn icon @click="show = !show">
                     <v-icon>{{
                       show ? "mdi-chevron-up" : "mdi-chevron-down"
                     }}</v-icon>
-                  </v-btn>
+                  </v-btn> -->
                 </v-card-actions>
                 <v-expand-transition>
                   <div v-show="show">
@@ -321,7 +321,7 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
-          <ProductSlideGroup/>
+          <ProductSlideGroup />
         </v-card>
       </v-dialog>
     </v-row>
@@ -330,7 +330,6 @@
 
 <script>
 const ExternalProducts = require("../router/Products");
-
 
 export default {
   name: "ProductSlideGroup",
@@ -355,7 +354,7 @@ export default {
         contact: null,
         contactMail: null,
         waLink: null,
-        imgUrl: null,
+
         subImg: ["", "", "", "", ""],
       },
     };
@@ -385,9 +384,8 @@ export default {
         contact: item.contact,
         contactMail: item.contactMail,
         waLink: item.waLink,
-        imgUrl: item.imgUrl,
+
         subImg: [
-          item.imgUrl,
           item.subImg[0],
           item.subImg[1],
           item.subImg[2],

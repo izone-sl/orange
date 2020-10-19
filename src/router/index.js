@@ -4,8 +4,9 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import AllProducts from "../views/AllProducts.vue";
 
-import adminLayout from "../views/admin/adminLayout.vue";
+// import adminLayout from "../views/admin/adminLayout.vue";
 import Dashboard from "../views/admin/Dashboard.vue";
+import ManageProducts from "../views/admin/ManageProducts.vue";
 
 Vue.use(VueRouter);
 
@@ -22,9 +23,14 @@ const routes = [
   },
   {
     path: "/dashboard",
-    name: "adminLayout",
-    component: adminLayout,
+    name: "Dashboard",
+    component: Dashboard,
+  }, {
+    path: "/manage_products",
+    name: "ManageProducts",
+    component: ManageProducts,
   },
+   
 ];
 
 const router = new VueRouter({
