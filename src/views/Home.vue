@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <TopNavigation style="position:fixed; z-index:100" class="w-100"/>
     <HomeWelcome />
     <ProductSlideGroup />
     <CategoryView />
@@ -11,7 +12,7 @@
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
 import DefaultView from "../components/DefaultView";
-// import TopNavigation from "../components/TopNavigation";
+import TopNavigation from "../components/TopNavigation";
 
 import HomeWelcome from "../components/HomeWelcome";
 import ProductSlideGroup from "../components/ProductSlideGroup";
@@ -23,7 +24,7 @@ export default {
   components: {
     HelloWorld,
     DefaultView,
-    // TopNavigation,
+    TopNavigation,
     HomeWelcome,
     ProductSlideGroup,
     CategoryView,

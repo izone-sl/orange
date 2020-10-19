@@ -1,12 +1,15 @@
 <template>
-  <div id="AllProducts" class="mt-5 teal lighten-5 p-3">
-    <v-container class=" bg-light mt-5">
+
+  <div id="AllProducts" class="  teal lighten-5 ">
+    <TopNavigation style="position:fixed; z-index:100" class="w-100"/>
+    <v-container class=" bg-light mt-8">
       <v-row class="m-0 mt-1">
         <!-- First Section -->
-        <div class="col-xl-4    ">
+        <div class="col-xl-4    " >
           <v-row>
             <v-col cols="12" md="12" class="   ">
               <v-text-field
+              
                 v-model="message"
                 :append-outer-icon="message ? 'mdi-search-web' : ''"
                 outlined
@@ -541,11 +544,13 @@
 <script>
 import Footer from "../components/Footer";
 import ProductSlideGroup from "../components/ProductSlideGroup";
+import TopNavigation from "../components/TopNavigation";
 
 const ExternalProducts = require("../router/Products");
 
 export default {
   components: {
+    TopNavigation,
     Footer,
     ProductSlideGroup,
   },
