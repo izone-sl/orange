@@ -447,12 +447,39 @@
                             >
 
                             <a
-                              :href="wa_url + viewProduct.contact"
+                              :href="wa_url + viewProduct.contact + 'asdasdsad'"
                               class="btn"
                               style="font-size:12px; color:#546E7A; text-decoration:none;"
-                              ><v-icon>mdi-whatsapp</v-icon> +{{
+                              ><v-icon>mdi-phone</v-icon> +{{
                                 viewProduct.contact
                               }}</a
+                            >
+
+                            <a
+                              :href="
+                                wa_url +
+                                  viewProduct.contact +
+                                  '&text=Hello There, i want to get some information about ' +
+                                  '%0a' +
+                                  ' Product: ' +
+                                  viewProduct.name +
+                                  ' - Ref - ' +
+                                  viewProduct.id +
+                                  '%0a' +
+                                  ' Category: ' +
+                                  viewProduct.category +
+                                  '%0a' +
+                                  ' Price: ' +
+                                  viewProduct.price +
+                                  '%0a%0a%0a%0a' +
+                                  encodeURIComponent(
+                                    ' ' + viewProduct.subImg[0]
+                                  ) +
+                                  '%0a Contact with owner: https://wa.me/94767220996'
+                              "
+                              class="btn"
+                              style="font-size:12px; color:#546E7A; text-decoration:none;"
+                              ><v-icon>mdi-whatsapp</v-icon> Chat on WhatsApp</a
                             >
 
                             <a
@@ -493,12 +520,17 @@
                           </v-dialog>
                         </v-row>
                       </v-col>
+
+                      <!-- <v-col class="bg-danger">
+                        sad
+                      </v-col> -->
                     </v-row>
                   </v-col>
                 </v-row>
               </v-list-item-content>
             </v-list-item>
           </v-list>
+          <ProductSlideGroup/>
         </v-card>
       </v-dialog>
     </v-row>
@@ -508,12 +540,14 @@
 
 <script>
 import Footer from "../components/Footer";
+import ProductSlideGroup from "../components/ProductSlideGroup";
 
 const ExternalProducts = require("../router/Products");
 
 export default {
   components: {
     Footer,
+    ProductSlideGroup,
   },
   data: () => ({
     E_Product: [],
@@ -522,6 +556,7 @@ export default {
     quantity: 1,
     quantityAlert: false,
     wa_url: "https://api.whatsapp.com/send?phone=",
+    wa_text: "",
     mail_url: "https://mail.google.com/mail/u/0/#inbox?compose=",
     password: "Password",
     show: false,
@@ -631,6 +666,8 @@ export default {
           item.subImg[3],
         ],
       };
+
+      this.wa_text = "";
       // alert("Product " + item.name + "has been selected");
     },
     quantityDecrease() {

@@ -1,6 +1,6 @@
 <template>
   <div id="ProductSlideGroup">
-    <v-row class="m-0">
+    <!-- <v-row class="m-0">
       <div class=" card teal lighten-4 col-xl-12">
         <v-row>
           <div class="col-xl-1  "></div>
@@ -10,7 +10,13 @@
           <div class="col-xl-6 "></div>
         </v-row>
       </div>
-    </v-row>
+    </v-row> -->
+
+    <v-toolbar color="teal lighten-4" height="80" flat>
+      <h6 class="teal--text">24 Hours Delivery Products</h6>
+      <v-spacer></v-spacer>
+      <v-btn color="teal text-light">View MORE</v-btn>
+    </v-toolbar>
 
     <v-row class="m-0">
       <div class="mt-4  col-xl-12">
@@ -97,7 +103,12 @@
         transition="dialog-bottom-transition"
       >
         <v-card class="border-none">
-          <v-toolbar dark color="teal darken-4">
+          <v-toolbar
+            dark
+            color="teal darken-4"
+            style="position:fixed; z-index:100;"
+            class="w-100"
+          >
             <v-btn icon dark @click="dialog = false">
               <v-icon>mdi-keyboard-backspace</v-icon>
             </v-btn>
@@ -109,7 +120,7 @@
             </v-btn> -->
             </v-toolbar-items>
           </v-toolbar>
-          <v-list three-line subheader>
+          <v-list three-line subheader class="pt-11">
             <v-list-item>
               <v-list-item-content>
                 <v-row class="m-0">
@@ -204,7 +215,6 @@
                               dense
                               @click:append-outer="quantity++"
                               @click:prepend="quantityDecrease"
-                             
                               type="number"
                             ></v-text-field>
                           </v-col>
@@ -231,9 +241,36 @@
                               :href="wa_url + viewProduct.contact"
                               class="btn"
                               style="font-size:12px; color:#546E7A; text-decoration:none;"
-                              ><v-icon>mdi-whatsapp</v-icon> +{{
+                              ><v-icon>mdi-phone</v-icon> +{{
                                 viewProduct.contact
                               }}</a
+                            >
+
+                            <a
+                              :href="
+                                wa_url +
+                                  viewProduct.contact +
+                                  '&text=Hello There, i want to get some information about ' +
+                                  '%0a' +
+                                  ' Product: ' +
+                                  viewProduct.name +
+                                  ' - Ref - ' +
+                                  viewProduct.id +
+                                  '%0a' +
+                                  ' Category: ' +
+                                  viewProduct.category +
+                                  '%0a' +
+                                  ' Price: ' +
+                                  viewProduct.price +
+                                  '%0a%0a%0a%0a' +
+                                  encodeURIComponent(
+                                    ' ' + viewProduct.subImg[0]
+                                  ) +
+                                  '%0a Contact with owner: https://wa.me/94767220996'
+                              "
+                              class="btn"
+                              style="font-size:12px; color:#546E7A; text-decoration:none;"
+                              ><v-icon>mdi-whatsapp</v-icon> Chat on WhatsApp</a
                             >
 
                             <a
@@ -284,6 +321,7 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
+          <ProductSlideGroup/>
         </v-card>
       </v-dialog>
     </v-row>
@@ -292,6 +330,8 @@
 
 <script>
 const ExternalProducts = require("../router/Products");
+
+
 export default {
   name: "ProductSlideGroup",
   data() {
@@ -318,7 +358,6 @@ export default {
         imgUrl: null,
         subImg: ["", "", "", "", ""],
       },
-      
     };
   },
   mounted() {
