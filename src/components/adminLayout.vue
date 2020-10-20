@@ -131,7 +131,7 @@ export default {
         {
           title: "MANAGE CATEGORIES",
           icon: "mdi-label",
-          to: "/manage_categories",
+          to: "/manage_category",
         },
         {
           title: "POSTS APPROVAL",
@@ -143,11 +143,11 @@ export default {
           icon: "mdi-order-bool-ascending",
           to: "/ordered_items",
         },
-        {
-          title: "DELAIED PRODUCTS",
-          icon: "mdi-order-bool-ascending",
-          to: "/delaied_products",
-        },
+        // {
+        //   title: "DELAIED PRODUCTS",
+        //   icon: "mdi-order-bool-ascending",
+        //   to: "/delaied_products",
+        // },
         {
           title: "REGISTERED CUSTOMERS",
           icon: "mdi-clipboard-account",

@@ -1,6 +1,3 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-
 export const Products = [
   {
     id: 1,
@@ -21,6 +18,7 @@ export const Products = [
       "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Camera-Tripod-3110-1.jpg?resize=555%2C555&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "true",
   },
   {
     id: 2,
@@ -43,6 +41,7 @@ export const Products = [
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Wireless-Koniycoi-Magnetic-Headphone-1.jpg?resize=555%2C555&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "true",
   },
   {
     id: 3,
@@ -64,6 +63,7 @@ export const Products = [
       "https://i1.wp.com/www.laabai.lk/wp-content/uploads/2020/09/Camera-Tripod-3110-3.jpg?resize=555%2C555&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "true",
   },
   {
     id: 4,
@@ -83,6 +83,7 @@ export const Products = [
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/08/Table-Mate-2-4.jpg?w=800&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "false",
   },
   {
     id: 5,
@@ -103,6 +104,7 @@ export const Products = [
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/05/E-Table-08.jpg?resize=555%2C555&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "false",
   },
   {
     id: 6,
@@ -123,6 +125,7 @@ export const Products = [
       "https://i0.wp.com/www.laabai.lk/wp-content/uploads/2020/05/004-19.jpg?resize=555%2C369&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "false",
   },
   {
     id: 7,
@@ -142,6 +145,7 @@ export const Products = [
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2019/08/GM-2961.jpg?w=1080&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "false",
   },
   {
     id: 8,
@@ -162,6 +166,7 @@ export const Products = [
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/10/Ozone-1kg-Oven-1.jpg?resize=555%2C555&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "false",
   },
   {
     id: 9,
@@ -182,5 +187,6 @@ export const Products = [
       "https://i2.wp.com/www.laabai.lk/wp-content/uploads/2020/10/SHX-1290-Sunglow-4-Burner-003.jpg?resize=555%2C555&ssl=1",
     ],
     date: "10-10-2020",
+    approvedStatus: "false",
   },
 ];

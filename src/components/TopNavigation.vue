@@ -42,20 +42,28 @@
       </v-toolbar>
 
       <v-row class="m-0  bg-light d-flex justify-center">
+        <v-col cols="12" md="4"> </v-col>
         <v-col cols="12" md="4" class=" pl-5 pr-5 ">
           <v-text-field
             v-model="message"
-            :append-outer-icon="message ? 'mdi-magnify' : ''"
             outlined
             placeholder="What are you looking for ?"
             clear-icon="mdi-close-circle"
             clearable
+            append-outer-icon="mdi-magnify"
             dense
             @click:append="toggleMarker"
             @click:append-outer="sendMessage"
             @click:prepend="changeIcon"
             @click:clear="clearMessage"
-          ></v-text-field>
+          >
+          </v-text-field>
+        </v-col>
+
+        <v-col cols="12" md="4" class="d-flex justify-end">
+          <v-btn to="dashboard">
+            Dashboard
+          </v-btn>
         </v-col>
       </v-row>
     </v-card>

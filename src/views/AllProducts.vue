@@ -449,7 +449,7 @@
                             >
 
                             <a
-                              :href="wa_url + viewProduct.contact + 'asdasdsad'"
+                              :href="wa_url + viewProduct.contact + ' '"
                               class="btn"
                               style="font-size:12px; color:#546E7A; text-decoration:none;"
                               ><v-icon>mdi-phone</v-icon> +{{

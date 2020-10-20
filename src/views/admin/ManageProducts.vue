@@ -4,13 +4,7 @@
       <v-content>
         <dashboardLayout />
         <v-container>
-          <!-- <v-row class="m-0">
-            <v-col md="12" cols="12" class="bg-danger title">
-              MANAGE ALL PRODUCTS
-            </v-col>
-          </v-row> -->
-
-          <!-- {{desserts[0].subImg}} -->
+         
 
           <!-- CRUD DATA TABLE -->
           <v-row class="m-0">
