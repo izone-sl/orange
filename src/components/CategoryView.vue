@@ -373,7 +373,7 @@
                 <v-card-actions>
                   <v-spacer></v-spacer>
 
-                  <v-btn text>
+                  <v-btn text @click="dialog = false">
                     Cancel
                   </v-btn>
 
@@ -447,7 +447,7 @@
                 <v-card-actions>
                   <v-spacer></v-spacer>
 
-                  <v-btn text>
+                  <v-btn text @click="dialog = false">
                     Cancel
                   </v-btn>
 

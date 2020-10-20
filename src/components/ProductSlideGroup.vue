@@ -42,7 +42,7 @@
                 </v-row>
               </v-card> -->
 
-              <v-card class="mx-auto p-3 ml-5" width="250" height="410">
+              <v-card class="mx-auto p-3 ml-5" width="250" height="410" @click="viewsingle(item)">
                 <v-img :src="item.subImg[0]" width="100%" height="250"></v-img>
 
                 <v-card-title v-if="item.name < 16">
@@ -322,6 +322,20 @@
             </v-list-item>
           </v-list>
           <ProductSlideGroup />
+
+          <v-row>
+            <v-col md="12" cols="12">
+        <v-list-item-avatar
+          tile
+          width="100%"
+          height="250"
+          color="grey"
+          class="d-flex align-center justify-center"
+        >
+          <p>advertisement section</p>
+        </v-list-item-avatar>
+      </v-col>
+          </v-row>
         </v-card>
       </v-dialog>
     </v-row>

@@ -10,12 +10,10 @@
             <img src="../assets/exlogo.png" alt="Logo" />
           </v-avatar> -->
 
-         
-
           <span class="Webtitle btn"
             ><a href="/" class="nav-link text-light"> ExLister.LK</a></span
           >
-           <v-btn icon to="/">
+          <v-btn icon to="/">
             <v-avatar>
               <img src="../assets/exlogo.png" alt="Logo" />
             </v-avatar>
@@ -50,11 +48,12 @@
             depressed
             class="text-light"
             @click="dialog = true"
+            small
           >
             POST ADS <v-icon class="pl-3"> mdi-plus-circle</v-icon>
           </v-btn>
 
-          <v-btn color="teal darken-4" depressed class="ml-1 text-light">
+          <v-btn color="teal darken-4" depressed class="ml-1 text-light" small>
             <a
               class="text-decoration-none text-light block"
               href="https://api.whatsapp.com/send?phone=94767220996&text=Hello%20There,%20i%20need%20a%20product%20can%20you%20help%20me%20to%20purchase?"
@@ -86,9 +85,88 @@
           <!-- <v-btn to="dashboard">
             Dashboard
           </v-btn> -->
+          <v-btn
+            color="teal darken-4"
+            depressed
+            class="text-light"
+            @click="MyAdsdialog = true"
+            small
+          >
+            MY ADs <v-icon class="pl-3"> mdi-account-circle</v-icon>
+          </v-btn>
         </v-col>
       </v-row>
     </v-card>
+
+    <!-- MY ADS Dialog -->
+    <v-row justify="center">
+      <v-dialog v-model="MyAdsdialog" persistent max-width="80%">
+        <v-card>
+          <v-card-title class="headline grey lighten-2">
+            WELCOME TO MY-ADs
+            <v-spacer></v-spacer>
+            <v-icon @click="MyAdsdialog = false">mdi-close</v-icon>
+          </v-card-title>
+          <v-card flat v-if="MyAds[0].ads.length <= 0">
+            <v-card-text class="d-flex align-center justify-center pa-3">
+              <v-icon color="red lighten-1" style="font-size:85px;"
+                >mdi-close-circle-outline</v-icon
+              >
+            </v-card-text>
+            <v-card-text class="d-flex align-center justify-center pa-3">
+              <!-- <h4>You Have Not Post Any Ads Yet !</h4> -->
+              <h5 class="text-justify">YOU HAVE NOT POST ANY ADS YET!</h5>
+            </v-card-text>
+          </v-card>
+
+          <v-card v-else flat>
+            <v-list-item three-line>
+              <v-list-item-content>
+                <v-col
+                  cols="12"
+                  md="12"
+                  class="  "
+                  v-for="(n, index) in MyAds"
+                  :key="index"
+                >
+                  <v-col
+                    v-for="(i, key) in n.ads"
+                    :key="key"
+                    class="  d-flex spacer"
+                  >
+                    [{{ key + 1 }}] - {{ i }}
+                    <v-spacer></v-spacer>
+                    <!-- <v-icon class=" "> mdi-delete</v-icon> -->
+
+                    <a
+                      class="text-decoration-none text-light block"
+                      :href="
+                        'https://api.whatsapp.com/send?phone=94767220996&text=Hello%20There, Requesting to delete this *' +
+                          i +
+                          '* product %0a Posted By ' +
+                          n.phone +
+                          ''
+                      "
+                    >
+                      <v-icon color="red"> mdi-delete</v-icon>
+                    </a>
+                  </v-col>
+                </v-col>
+              </v-list-item-content>
+            </v-list-item>
+          </v-card>
+          <!-- <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="green darken-1" text @click="MyAdsdialog = false">
+              Disagree
+            </v-btn>
+            <v-btn color="green darken-1" text @click="MyAdsdialog = false">
+              Agree
+            </v-btn>
+          </v-card-actions> -->
+        </v-card>
+      </v-dialog>
+    </v-row>
 
     <!-- ADD Product Dialog -->
     <div class="text-center">
@@ -152,7 +230,7 @@
                 <v-card-actions>
                   <v-spacer></v-spacer>
 
-                  <v-btn text>
+                  <v-btn text @click="dialog = false">
                     Cancel
                   </v-btn>
 
@@ -226,7 +304,7 @@
                 <v-card-actions>
                   <v-spacer></v-spacer>
 
-                  <v-btn text>
+                  <v-btn text @click="dialog = false">
                     Cancel
                   </v-btn>
 
@@ -247,6 +325,7 @@
       app
       class=""
       dark
+      temporary
       color=" dark darken-4"
     >
       <v-list-item>
@@ -254,9 +333,65 @@
           <v-list-item-title
             class="pt-3 text-light d-flex justify-center align-center"
           >
-            ALL CATEGORIES
+            CONTACT INFORMATION
             <v-spacer></v-spacer>
             <v-icon @click="drawer = false">mdi-close</v-icon>
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+
+      <v-list dense nav>
+        <v-list-item class="text-decoration-none">
+          <v-list-item-icon>
+            <v-icon class="teal--text"> mdi-whatsapp</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title class="text-light">
+              <a
+                class="text-decoration-none text-light block"
+                href="https://api.whatsapp.com/send?phone=94767220996&text=Hello%20There,%20i%20need%20a%20product%20can%20you%20help%20me%20to%20purchase?"
+              >
+                CHAT ON WHATSAPP</a
+              >
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item class="text-decoration-none">
+          <v-list-item-icon>
+            <v-icon class="teal--text"> mdi-phone</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title class="text-light">
+              +94 767 220 996
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item class="text-decoration-none">
+          <v-list-item-icon>
+            <v-icon class="teal--text"> mdi-mail</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title class="text-light">
+              catchby@gmail.com
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+
+      <v-divider></v-divider>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title
+            class="pt-3 text-light d-flex justify-center align-center"
+          >
+            ALL CATEGORIES
+            <v-spacer></v-spacer>
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
@@ -290,6 +425,7 @@
 export default {
   data() {
     return {
+      MyAdsdialog: false,
       dialog: false,
       e1: 1,
       files: [],
@@ -381,6 +517,20 @@ export default {
         },
       ],
       right: null,
+      MyAds: [
+        {
+          id: 2,
+          name: "Raza",
+          phone: "94777123456",
+          address: "Kurugoda",
+          email: "raza@gmail.com",
+          regdate: "10-10-2020",
+          ads: [
+            "Table Mate Version 2",
+            "Laptop Table E-Table With Cooling Fans Stand",
+          ],
+        },
+      ],
     };
   },
   computed: {

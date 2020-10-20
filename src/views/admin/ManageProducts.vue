@@ -200,7 +200,7 @@
                         <v-card-actions>
                           <v-spacer></v-spacer>
 
-                          <v-btn text>
+                          <v-btn text @click="dialog = false">
                             Cancel
                           </v-btn>
 
@@ -572,7 +572,7 @@ export default {
         text: "Posted By",
         align: "start",
         sortable: true,
-        value: "postedBy",
+        value: "contact",
       },
       {
         text: "Date",
@@ -633,6 +633,7 @@ export default {
         category: element.category,
         description: element.description,
         postedBy: element.postedBy,
+        contact: element.contact,
         subImg: element.subImg,
 
         date: element.date,

@@ -64,19 +64,33 @@
 
                 <!-- colored panel -->
                 <template v-slot:item.approvedStatus="{ item }">
-                  <v-chip small :color="getColor(item.approvedStatus)" dark>
+                  <v-chip
+                    small
+                    :color="getColor(item.approvedStatus)"
+                    dark
+                    v-if="item.approvedStatus == 'approved'"
+                    @click="editItem(item)"
+                  >
+                    {{ item.approvedStatus }}
+                  </v-chip>
+
+                  <v-chip
+                    small
+                    :color="getColor(item.approvedStatus)"
+                    dark
+                    v-else
+                    @click="editItem(item)"
+                  >
                     {{ item.approvedStatus }}
                   </v-chip>
                 </template>
 
                 <!-- action panel -->
                 <template v-slot:item.actions="{ item }">
-                  <!-- {{ item.approvedStatus }} -->
-
-                  <v-icon
+                  <!-- <v-icon
                     small
                     class="mr-2"
-                    v-if="item.approvedStatus == 'false'"
+                    v-if="item.approvedStatus == 'approved'"
                     color="green"
                     @click="editItem(item)"
                   >
@@ -90,7 +104,7 @@
                     @click="editItem(item)"
                   >
                     mdi-close-circle-outline
-                  </v-icon>
+                  </v-icon> -->
 
                   <v-icon small class="mr-2" @click="singleView(item)">
                     mdi-eye
@@ -261,9 +275,7 @@
                                 >
 
                                 <a
-                                  :href="
-                                    wa_url + viewProduct.contact + ' '
-                                  "
+                                  :href="wa_url + viewProduct.contact + ' '"
                                   class="btn"
                                   style="font-size:12px; color:#546E7A; text-decoration:none;"
                                   ><v-icon>mdi-phone</v-icon> +{{
@@ -503,20 +515,20 @@ export default {
       // alert("Product " + item.name + "has been selected");
     },
     getColor(item) {
-      if (item == "false") return "red";
-      if (item == "true") return "green";
+      if (item == "refuse") return "red";
+      if (item == "approved") return "green";
     },
     editItem(item) {
-      if (item.approvedStatus == "true") {
+      if (item.approvedStatus == "approved") {
         this.desserts.find((file) => {
           if (file.id == item.id) {
-            file.approvedStatus = "false";
+            file.approvedStatus = "refuse";
           }
         });
       } else {
         this.desserts.find((file) => {
           if (file.id == item.id) {
-            file.approvedStatus = "true";
+            file.approvedStatus = "approved";
           }
         });
       }
