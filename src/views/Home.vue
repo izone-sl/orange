@@ -1,9 +1,49 @@
 <template>
   <div class="home">
-    <TopNavigation style="position:fixed; z-index:100" class="w-100"/>
-    <HomeWelcome class="mt-13"/>
+    <TopNavigation style="position:fixed; z-index:100" class="w-100" />
+    <HomeWelcome class="mt-13" />
     <ProductSlideGroup />
     <CategoryView />
+    <ProductSlideGroup class="mt-6" />
+
+    <v-row class="m-0">
+      <v-col md="4" cols="12">
+        <v-list-item-avatar
+          tile
+          width="100%"
+          height="250"
+          color="grey"
+          class="d-flex align-center justify-center"
+        >
+          <p>advertisement Image 01</p>
+        </v-list-item-avatar>
+      </v-col>
+      <v-col md="4" cols="12">
+        <v-list-item-avatar
+          tile
+          width="100%"
+          height="250"
+          color="grey"
+          class="d-flex align-center justify-center"
+        >
+          <p>advertisement Image 02</p>
+        </v-list-item-avatar>
+      </v-col>
+      <v-col md="4" cols="12">
+        <v-list-item-avatar
+          tile
+          width="100%"
+          height="250"
+          color="grey"
+          class="d-flex align-center justify-center"
+        >
+          <p>advertisement Image 03</p>
+        </v-list-item-avatar>
+      </v-col>
+    </v-row>
+
+    <ProductSlideGroup class="mt-6" />
+
     <Footer />
   </div>
 </template>

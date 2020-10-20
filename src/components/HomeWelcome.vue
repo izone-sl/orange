@@ -1,13 +1,51 @@
 <template>
   <div id="HomeWelcome">
-     
-    <v-container >
+    <!-- slideer -->
+    <!-- <v-carousel height="500" :continuous="true">
+          <v-carousel-item
+            v-for="(item, i) in items"
+            :key="i"
+            :src="item.src"
+            class="img-fluid"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+        </v-carousel> -->
+    <v-row class="   ">
+      <v-col md="12" cols="12" class=" ">
+        <v-card
+          elevation="20"
+          max-width="w-100"
+          class="mx-auto"
+          style="margin-top: 90px;"
+        >
+          <v-system-bar lights-out></v-system-bar>
+          <v-carousel
+            :continuous="true"
+            cycle
+            :show-arrows="true"
+            delimiter-icon="mdi-circle-slice-8"
+            height="350"
+          >
+            <v-carousel-item v-for="(item, i) in items" :key="i">
+              <v-sheet height="100%">
+                <v-row class="fill-height" align="center">
+                  <v-img :src="item.src" ></v-img>
+                </v-row>
+              </v-sheet>
+            </v-carousel-item>
+          </v-carousel>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-container class="">
       <v-row class="mt-5 m-0">
         <v-col class="  mt-5">
-          <v-row>
-            <div class="  col-xl-7">
-              <v-row>
-                <div class="col-xl-12">
+          <v-row class="m-0">
+            <div class="  col-xl-7 d-flex align-center" >
+              <v-row >
+                <div class="col-xl-12 ">
                   <h3>
                     Welcome to Orange.lk. The largest <br />
                     marketplace in your area!
@@ -19,12 +57,12 @@
                   </p>
                 </div>
               </v-row>
-              <v-row>
+              <!-- <v-row>
                 <div class="  col-xl-12">
                   <h6>Browse our top categories:</h6>
                 </div>
-              </v-row>
-              <v-row>
+              </v-row> -->
+              <!-- <v-row>
                 <div class="  col-xl-12">
                   <v-row>
                     <v-col sm="3" md="3" class=" text-center">
@@ -77,7 +115,7 @@
                     </v-col>
                   </v-row>
                 </div>
-              </v-row>
+              </v-row> -->
             </div>
             <div class=" col-xl-5 mt-5">
               <v-img
@@ -101,6 +139,28 @@ export default {
       dialog: false,
       e1: 1,
       files: [],
+      items: [
+        {
+          src:
+            "https://i.pinimg.com/originals/f4/9b/18/f49b1827466f1d57b9e9b3cebdf955ae.png",
+        },
+        {
+          src:
+            "https://i.pinimg.com/originals/7c/e0/b8/7ce0b8145c2a8150f4b971d18fc48d5c.jpg",
+        },
+        {
+          src:
+            "https://i.pinimg.com/originals/bb/6e/df/bb6edf8a1583d517b601f773b67efe32.jpg",
+        },
+        {
+          src:
+            "https://i.pinimg.com/originals/75/1d/2b/751d2b30f041d6a7ec336dbdef797311.jpg",
+        },
+        {
+          src:
+            "https://i.pinimg.com/originals/02/cf/cf/02cfcffac595c832c514d58704cd82ce.jpg",
+        },
+      ],
     };
   },
 };
