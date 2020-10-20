@@ -3,50 +3,72 @@
     <v-card color="teal darken-4" flat height="130px" tile>
       <v-toolbar dense color="teal darken-4" height="60">
         <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-
+        <v-icon class="text-light" @click="drawer = true">mdi-menu</v-icon>
+        <v-spacer></v-spacer>
         <v-toolbar-title class="text-light ">
           <!-- <v-avatar >
             <img src="../assets/exlogo.png" alt="Logo" />
           </v-avatar> -->
 
-          <v-btn icon to="/">
-            <v-avatar>
-              <img src="../assets/exlogo.png" alt="Logo" />
-            </v-avatar>
-          </v-btn>
+         
 
           <span class="Webtitle btn"
             ><a href="/" class="nav-link text-light"> ExLister.LK</a></span
           >
+           <v-btn icon to="/">
+            <v-avatar>
+              <img src="../assets/exlogo.png" alt="Logo" />
+            </v-avatar>
+          </v-btn>
         </v-toolbar-title>
 
-        <v-spacer></v-spacer>
-
-        <v-btn
+        <!-- <v-btn
           color="teal darken-4"
           depressed
           class="text-light"
           @click="dialog = true"
         >
           POST ADS <v-icon class="pl-3"> mdi-plus-circle</v-icon>
-        </v-btn>
+        </v-btn> -->
 
-        <v-btn color="teal darken-4" depressed class="text-light">
+        <!-- <p>Order online with 100% buyer protection</p> -->
+
+        <!-- <v-btn color="teal darken-4" depressed class="text-light">
           <a
             class="btn text-light"
             href="https://api.whatsapp.com/send?phone=94767220996&text=Hello%20There,%20i%20need%20a%20product%20can%20you%20help%20me%20to%20purchase?"
           >
             <v-icon class="pl-3"> mdi-whatsapp</v-icon></a
           >
-        </v-btn>
+        </v-btn> -->
       </v-toolbar>
 
-      <v-row class="m-0  bg-light d-flex justify-center">
-        <v-col cols="12" md="4"> </v-col>
-        <v-col cols="12" md="4" class=" pl-5 pr-5 ">
+      <v-row class="m-0  bg-light d-flex justify-center ">
+        <v-col cols="12" md="4" class="d-flex justify-center align-center">
+          <v-btn
+            color="teal darken-4"
+            depressed
+            class="text-light"
+            @click="dialog = true"
+          >
+            POST ADS <v-icon class="pl-3"> mdi-plus-circle</v-icon>
+          </v-btn>
+
+          <v-btn color="teal darken-4" depressed class="ml-1 text-light">
+            <a
+              class="text-decoration-none text-light block"
+              href="https://api.whatsapp.com/send?phone=94767220996&text=Hello%20There,%20i%20need%20a%20product%20can%20you%20help%20me%20to%20purchase?"
+            >
+              <v-icon class=" "> mdi-whatsapp</v-icon> Request Products</a
+            >
+          </v-btn>
+        </v-col>
+
+        <v-col cols="12" md="4" class="  ">
           <v-text-field
             v-model="message"
             outlined
+            class="mt-5"
             placeholder="What are you looking for ?"
             clear-icon="mdi-close-circle"
             clearable
@@ -60,10 +82,10 @@
           </v-text-field>
         </v-col>
 
-        <v-col cols="12" md="4" class="d-flex justify-end">
-          <v-btn to="dashboard">
+        <v-col cols="12" md="4" class="d-flex justify-center align-center">
+          <!-- <v-btn to="dashboard">
             Dashboard
-          </v-btn>
+          </v-btn> -->
         </v-col>
       </v-row>
     </v-card>
@@ -218,6 +240,49 @@
         </v-card>
       </v-dialog>
     </div>
+
+    <!-- Navigation Drawer -->
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      class=""
+      dark
+      color=" dark darken-4"
+    >
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title
+            class="pt-3 text-light d-flex justify-center align-center"
+          >
+            ALL CATEGORIES
+            <v-spacer></v-spacer>
+            <v-icon @click="drawer = false">mdi-close</v-icon>
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list dense nav>
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
+          link
+          :href="item.to"
+          class="text-decoration-none"
+        >
+          <v-list-item-icon>
+            <v-icon class="teal--text">{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title class="text-light">
+              {{ item.title }}
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
   </div>
 </template>
 
@@ -242,6 +307,80 @@ export default {
         "mdi-emoticon-sad",
         "mdi-emoticon-tongue",
       ],
+      drawer: false,
+      items: [
+        {
+          title: "Mobile accessories",
+          icon: "mdi-label",
+          // to: "/dashboard",
+        },
+        {
+          title: "Computer accessories",
+          icon: "mdi-label",
+          // to: "/manage_products",
+        },
+        {
+          title: "Health and Beauty",
+          icon: "mdi-label",
+          // to: "/manage_category",
+        },
+        {
+          title: "Men's Clothing",
+          icon: "mdi-label",
+          // to: "/post_approval",
+        },
+        {
+          title: "Women's Clothing",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "Mes's Accessories",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "Women's Accessories",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "24 Hours Essentials",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "Sport Equipments",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "Kitchen Equipments",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "Shoes & Bags",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "Wrist watches",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "Electoronics",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+        {
+          title: "Gift & Packs",
+          icon: "mdi-label",
+          // to: "/ordered_items",
+        },
+      ],
+      right: null,
     };
   },
   computed: {

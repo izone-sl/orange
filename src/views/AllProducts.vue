@@ -1,7 +1,7 @@
 <template>
   <div id="AllProducts" class="teal lighten-5 ">
     <TopNavigation style="position:fixed; z-index:100" class="w-100" />
-    <v-container class=" bg-light mt-15 pt-15">
+    <v-container class=" bg-light  "  style="margin-top: 210px;">
       <v-row class="m-0 mt-10">
         <!-- First Section -->
         <div class="col-xl-4    ">

@@ -17,7 +17,7 @@
           elevation="20"
           max-width="w-100"
           class="mx-auto"
-          style="margin-top: 90px;"
+          style="margin-top: 110px;"
         >
           <v-system-bar lights-out></v-system-bar>
           <v-carousel
